@@ -23,16 +23,6 @@ export default function TodoList() {
     setHideDone(!hideDone);
   }
 
-  /*
-    -> Old Way of doing it:
-
-      const filtered = hideDone ? todos.filter((todo) => !todo.done) : todos;
-
-    -> The problem with this was that if you had a component inside of a component,
-      react would have to check for every child compnonet if it has changed
-  */
-
-  /* New Way of doing it: Again you're doing the computer's work*/
   const filtered = useMemo(
     () => (hideDone ? todos.filter((todo) => !todo.done) : todos),
     [todos, hideDone]

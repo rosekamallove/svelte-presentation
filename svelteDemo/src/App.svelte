@@ -10,6 +10,7 @@
 </script>
 
 <main>
+  <title>SvelteDemo</title>
   <h1>Hello {name}!</h1>
   <input type="text" value={name} on:input={handleInput} />
   <button on:click={handleClick}>Click: {count}</button>

@@ -1,8 +1,8 @@
 import { useState } from "react";
 import "./App.css";
-import Todo from "./Todo";
+import TodoList from "./Todo";
 
-function App() {
+export default function App() {
   /*
    * When any of these values changes, React goes through
    * each and every element and checks if it has been changed
@@ -22,12 +22,8 @@ function App() {
   const [count, setCount] = useState(0);
   const [name, setName] = useState("Alex");
 
-  const handleInput = (e) => {
-    setName(e.target.value);
-  };
-  const handleClick = () => {
-    setCount(count + 1);
-  };
+  const handleInput = (e) => setName(e.target.value);
+  const handleClick = () => setCount(count + 1);
 
   return (
     <>
@@ -35,11 +31,9 @@ function App() {
         <h1>Hello, {name}!</h1>
         <input type="text" value={name} onInput={handleInput} />
         <button onClick={handleClick}>Click: {count}</button>
-        <h1>Todo Example</h1>
-        <Todo />
+        <h1>React Todo</h1>
+        <TodoList />
       </div>
     </>
   );
 }
-
-export default App;

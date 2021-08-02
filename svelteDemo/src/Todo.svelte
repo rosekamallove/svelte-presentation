@@ -14,12 +14,11 @@
   }
   let hideDone = false;
 
-  const filtered = hideDone ? todos.filter((todo) => !todo.done) : todos;
+  $: filtered = hideDone ? todos.filter((todo) => !todo.done) : todos;
 </script>
 
 <label class="hide-done">
   <input type="checkbox" bind:checked={hideDone} />
-
   Hide Done
 </label>
 
