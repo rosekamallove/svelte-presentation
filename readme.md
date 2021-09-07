@@ -1,14 +1,10 @@
-I would like all of yuo guys to go to both of these links:
+**I would like all of yuo guys to go to both of these links:**
 
-[Concurrent React](https://rethinking-reactivity.surge.sh/#slide=24)
+- [Concurrent React](https://rethinking-reactivity.surge.sh/#slide=24)
 
-[The Svelte Alternative](https://rethinking-reactivity.surge.sh/#slide=25)
+- [The Svelte Alternative](https://rethinking-reactivity.surge.sh/#slide=25)
 
 These are from the slides of Rich Harris `Creater of Svelte`
-
-**React**: An internal cumbustion engine
-
-**Svelte**: A Tesla Roadster
 
 ---
 
